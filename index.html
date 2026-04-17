@@ -6,135 +6,234 @@
   <title>TED SOFT - Phần mềm xây dựng</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- favicon -->
   <link rel="icon" href="111692_ted_512x512.ico" />
 
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
-<body class="bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800">
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800 font-sans">
 
-<!-- HEADER -->
-<header class="bg-white shadow-lg border-b border-slate-200">
-  <div class="container mx-auto px-6 py-5 flex items-center justify-between">
+<header class="bg-white sticky top-0 z-50 shadow-md border-b border-slate-200">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
 
     <div class="flex items-center gap-4">
-      <!-- LOGO -->
-      <img src="111692_ted_512x512.ico" class="h-12 w-12 rounded shadow" />
+      <img src="111692_ted_512x512.ico" class="h-10 w-10 rounded shadow" alt="Logo TED SOFT" />
 
       <div>
-        <h1 class="text-xl font-bold text-blue-700">TED SOFT</h1>
-        <p class="text-sm text-slate-500">Phần mềm xây dựng & kỹ thuật</p>
+        <h1 class="text-xl font-bold text-blue-700 leading-none">TED SOFT</h1>
+        <p class="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mt-1">Phần mềm xây dựng & kỹ thuật</p>
       </div>
     </div>
 
-    <nav class="space-x-6 text-sm font-medium">
-      <a href="#features" class="hover:text-blue-600">Phần mềm</a>
-      <a href="#screens" class="hover:text-blue-600">Hình ảnh</a>
-      <a href="#contact" class="hover:text-blue-600">Liên hệ</a>
+    <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+      <a href="#features" class="text-slate-600 hover:text-blue-600 transition">Phần mềm</a>
+      <a href="#contact" class="text-slate-600 hover:text-blue-600 transition">Liên hệ</a>
     </nav>
 
+    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition">
+      Hotline
+    </a>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="container mx-auto px-6 py-14 grid lg:grid-cols-2 gap-10 items-center">
-
+<section class="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
   <div>
-    <h2 class="text-4xl font-extrabold mb-5 text-slate-800">
-      Bộ công cụ kỹ sư hiện đại
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-slate-900 leading-tight">
+      Bộ công cụ kỹ sư <span class="text-blue-600">hiện đại</span>
     </h2>
 
-    <p class="text-slate-600 mb-6">
+    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
       Giải pháp phần mềm chuyên sâu cho thiết kế móng cọc, xử lý PDF, 
-      PCAcol và quản lý doanh nghiệp. Tăng tốc công việc kỹ thuật và chuẩn hóa dữ liệu.
+      PCAcol và quản lý doanh nghiệp. Tăng tốc công việc kỹ thuật và chuẩn hóa dữ liệu theo tiêu chuẩn mới nhất.
     </p>
 
-    <div class="flex gap-4">
-      <a href="#features" class="px-5 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
-        Khám phá
+    <div class="flex flex-wrap gap-4">
+      <a href="#features" class="px-8 py-3 bg-blue-600 text-white font-bold rounded-xl shadow-lg shadow-blue-200 hover:bg-blue-700 hover:-translate-y-1 transition-all">
+        Khám phá ngay
       </a>
-      <a href="#contact" class="px-5 py-3 border rounded-lg hover:bg-slate-100">
-        Liên hệ
+      <a href="#contact" class="px-8 py-3 bg-white border border-slate-200 text-slate-700 font-bold rounded-xl hover:bg-slate-50 transition-all">
+        Tư vấn giải pháp
       </a>
     </div>
   </div>
 
-  <div class="bg-white rounded-xl shadow-lg p-6">
-    <h3 class="font-semibold mb-3 text-blue-700">Tổng quan</h3>
-    <ul class="list-disc pl-5 text-slate-600 space-y-2">
-      <li>Tự động hóa xử lý PDF kỹ thuật</li>
-      <li>Tính toán móng cọc chính xác</li>
-      <li>Kết nối PCAcol</li>
-      <li>Quản lý doanh nghiệp</li>
-    </ul>
-  </div>
-
-</section>
-
-<!-- FEATURES -->
-<section id="features" class="container mx-auto px-6 py-10">
-  <h2 class="text-2xl font-bold mb-8 text-center text-blue-700">
-    Các phần mềm
-  </h2>
-
-  <div class="grid md:grid-cols-2 gap-8">
-
-    <!-- CARD -->
-    <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-      <img src="Tedpile.jpg" class="w-full h-48 object-cover" />
-      <div class="p-6">
-        <h3 class="text-lg font-semibold text-blue-700">Tạo Mục Lục PDF</h3>
-        <p class="text-slate-600 mt-2 mb-4">
-          Tự động tạo bookmark PDF, xử lý hàng loạt và xuất báo cáo.
-        </p>
-        <a class="text-blue-600 font-medium hover:underline">Tải xuống →</a>
-      </div>
-    </article>
-
-    <!-- CARD -->
-    <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-      <img src="Tedpile.jpg" class="w-full h-48 object-cover" />
-      <div class="p-6">
-        <h3 class="text-lg font-semibold text-blue-700">Phần mềm Móng Cọc</h3>
-        <p class="text-slate-600 mt-2 mb-4">
-          Tính toán nội lực, kiểm tra cọc theo tiêu chuẩn.
-        </p>
-        <a class="text-blue-600 font-medium hover:underline">Chi tiết →</a>
-      </div>
-    </article>
-
-    <!-- CARD -->
-    <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-      <img src="Tedpile.jpg" class="w-full h-48 object-cover" />
-      <div class="p-6">
-        <h3 class="text-lg font-semibold text-blue-700">PCAcol Generator</h3>
-        <p class="text-slate-600 mt-2 mb-4">
-          Tạo input chuẩn cho PCAcol nhanh chóng.
-        </p>
-        <a class="text-blue-600 font-medium hover:underline">Xem thêm →</a>
-      </div>
-    </article>
-
-    <!-- CARD -->
-    <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-      <img src="Tedpile.jpg" class="w-full h-48 object-cover" />
-      <div class="p-6">
-        <h3 class="text-lg font-semibold text-blue-700">Quản lý Công ty</h3>
-        <p class="text-slate-600 mt-2 mb-4">
-          Quản lý nhân sự, hóa đơn, tài chính.
-        </p>
-        <a class="text-blue-600 font-medium hover:underline">Dùng thử →</a>
-      </div>
-    </article>
-
+  <div class="bg-white rounded-2xl shadow-xl p-8 border border-blue-100 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full -mr-16 -mt-16 z-0"></div>
+    <div class="relative z-10">
+        <h3 class="font-bold text-xl mb-4 text-blue-700 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Ưu điểm vượt trội
+        </h3>
+        <ul class="space-y-4 text-slate-600">
+          <li class="flex items-start gap-3">
+            <span class="text-blue-500 font-bold">•</span>
+            <span>Tự động hóa xử lý PDF kỹ thuật, tiết kiệm 80% thời gian.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-500 font-bold">•</span>
+            <span>Tính toán móng cọc chính xác theo TCVN.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-500 font-bold">•</span>
+            <span>Kết nối đồng bộ dữ liệu với PCAcol.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-500 font-bold">•</span>
+            <span>Hệ thống quản lý doanh nghiệp chuyên biệt cho ngành xây dựng.</span>
+          </li>
+        </ul>
+    </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-white mt-12 border-t">
-  <div class="container mx-auto px-6 py-6 text-sm text-slate-500 flex justify-between">
-    <div>© 2025 TED SOFT</div>
-    <div>Design by You 😎</div>
+<section id="features" class="bg-slate-100/50 py-20">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Danh mục phần mềm</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8">
+
+      <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all group flex flex-col md:flex-row">
+        <div class="w-full md:w-1/3 lg:w-1/4 overflow-hidden bg-slate-200">
+            <img src="Tedpile.jpg" class="w-full h-56 md:h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tạo Mục Lục PDF" />
+        </div>
+        <div class="w-full md:w-2/3 lg:w-3/4 p-8 flex flex-col justify-center">
+          <div class="flex items-center gap-2 mb-2">
+              <span class="px-2 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase rounded">Công cụ PDF</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-800 group-hover:text-blue-700 transition">Tạo Mục Lục PDF</h3>
+          <p class="text-slate-600 mt-3 mb-6 leading-relaxed">
+            Giải pháp chuyên nghiệp để tự động hóa việc tạo bookmark cho hồ sơ thiết kế, xử lý hàng loạt hàng ngàn trang tài liệu và xuất báo cáo PDF chuẩn hóa chỉ trong vài giây.
+          </p>
+          <div>
+            <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:gap-3 transition-all">
+              Tải xuống ngay 
+              <span class="ml-2">→</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all group flex flex-col md:flex-row">
+        <div class="w-full md:w-1/3 lg:w-1/4 overflow-hidden bg-slate-200">
+            <img src="Tedpile.jpg" class="w-full h-56 md:h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Phần mềm Móng Cọc" />
+        </div>
+        <div class="w-full md:w-2/3 lg:w-3/4 p-8 flex flex-col justify-center">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase rounded">Thiết kế kết cấu</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-800 group-hover:text-blue-700 transition">Phần mềm Móng Cọc</h3>
+          <p class="text-slate-600 mt-3 mb-6 leading-relaxed">
+            Tính toán nội lực, kiểm tra sức chịu tải của cọc và đài cọc theo các tiêu chuẩn hiện hành. Hỗ trợ xuất thuyết minh tính toán chi tiết và chuyên nghiệp.
+          </p>
+          <div>
+            <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:gap-3 transition-all">
+              Chi tiết sản phẩm 
+              <span class="ml-2">→</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all group flex flex-col md:flex-row">
+        <div class="w-full md:w-1/3 lg:w-1/4 overflow-hidden bg-slate-200">
+            <img src="Tedpile.jpg" class="w-full h-56 md:h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="PCAcol Generator" />
+        </div>
+        <div class="w-full md:w-2/3 lg:w-3/4 p-8 flex flex-col justify-center">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold uppercase rounded">Tiện ích kết nối</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-800 group-hover:text-blue-700 transition">PCAcol Generator</h3>
+          <p class="text-slate-600 mt-3 mb-6 leading-relaxed">
+            Tự động tạo tệp đầu vào (input) chuẩn cho phần mềm PCAcol từ dữ liệu thiết kế. Loại bỏ sai sót thủ công và đẩy nhanh tiến độ thiết kế cột vách.
+          </p>
+          <div>
+            <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:gap-3 transition-all">
+              Xem hướng dẫn 
+              <span class="ml-2">→</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all group flex flex-col md:flex-row">
+        <div class="w-full md:w-1/3 lg:w-1/4 overflow-hidden bg-slate-200">
+            <img src="Tedpile.jpg" class="w-full h-56 md:h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Quản lý Công ty" />
+        </div>
+        <div class="w-full md:w-2/3 lg:w-3/4 p-8 flex flex-col justify-center">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2 py-1 bg-orange-50 text-orange-600 text-[10px] font-bold uppercase rounded">ERP & Management</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-800 group-hover:text-blue-700 transition">Quản lý Doanh nghiệp</h3>
+          <p class="text-slate-600 mt-3 mb-6 leading-relaxed">
+            Giải pháp quản trị tinh gọn: Quản lý nhân sự, theo dõi dòng tiền, hệ thống hóa hóa đơn và tiến độ dự án. Dành riêng cho các đơn vị tư vấn thiết kế.
+          </p>
+          <div>
+            <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:gap-3 transition-all">
+              Dùng thử miễn phí 
+              <span class="ml-2">→</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="bg-white border-t border-slate-200">
+  <div class="container mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+                <img src="111692_ted_512x512.ico" class="h-8 w-8 rounded" alt="Logo" />
+                <span class="text-xl font-bold text-blue-700">TED SOFT</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Đơn vị hàng đầu cung cấp các giải pháp phần mềm tự động hóa trong lĩnh vực xây dựng và quản trị kỹ thuật tại Việt Nam.
+            </p>
+        </div>
+        
+        <div>
+            <h4 class="font-bold text-slate-900 mb-6">Liên kết</h4>
+            <ul class="space-y-4 text-sm text-slate-600">
+                <li><a href="#" class="hover:text-blue-600">Về chúng tôi</a></li>
+                <li><a href="#features" class="hover:text-blue-600">Sản phẩm</a></li>
+                <li><a href="#" class="hover:text-blue-600">Hướng dẫn sử dụng</a></li>
+                <li><a href="#" class="hover:text-blue-600">Chính sách bảo mật</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-bold text-slate-900 mb-6">Hỗ trợ</h4>
+            <ul class="space-y-4 text-sm text-slate-600">
+                <li class="flex items-center gap-3">
+                    <span class="font-bold text-blue-600">Email:</span> contact@tedsoft.vn
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="font-bold text-blue-600">Hotline:</span> 09xx xxx xxx
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="font-bold text-blue-600">Địa chỉ:</span> Hà Nội, Việt Nam
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm text-slate-400">© 2025 TED SOFT. All rights reserved.</div>
+      <div class="flex gap-6 text-sm text-slate-400">
+          <span>Design with ❤️ by You</span>
+      </div>
+    </div>
   </div>
 </footer>
 
